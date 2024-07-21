@@ -1,5 +1,28 @@
 # Monitoring System with Grafana and Prometheus
 
+## Description
+This program sets up a monitoring system using Grafana and Prometheus to monitor a Node.js application. The monitoring system collects and visualizes metrics to help you understand the performance and health of your Node.js application.
+
+## Purpose
+The purpose of this monitoring system is to provide a robust solution for tracking various performance metrics of a Node.js application, including CPU usage, memory usage, and other custom metrics. By using Prometheus to collect metrics and Grafana to visualize them, you can gain insights into your application's behavior and performance in real-time.
+
+## How It Works
+1. **Prometheus**: Prometheus is a powerful monitoring and alerting toolkit that scrapes metrics from monitored targets. In this setup, it collects metrics from a Node.js application and its own metrics endpoint.
+   
+2. **Grafana**: Grafana is an open-source platform for monitoring and observability. It provides a rich set of dashboards to visualize the metrics collected by Prometheus.
+
+3. **Node.js Application**: The Node.js application is instrumented with the `prom-client` library to expose custom metrics to Prometheus. These metrics are available at the `/metrics` endpoint of the application.
+
+## Key Features
+- **Real-time Monitoring**: Collects and visualizes metrics in real-time to provide immediate insights into the application's performance.
+- **Custom Metrics**: Allows for the collection of custom metrics from the Node.js application, tailored to specific monitoring needs.
+- **User-friendly Dashboards**: Grafana provides easy-to-use and highly customizable dashboards to visualize the data collected by Prometheus.
+
+## Benefits
+- **Improved Performance**: By monitoring key metrics, you can identify and address performance bottlenecks.
+- **Proactive Issue Detection**: Alerts can be set up in Prometheus to notify you of potential issues before they impact end users.
+- **Data-Driven Insights**: Visualizing metrics in Grafana helps in making informed decisions based on real data.
+
 ## Objective
 Implement a monitoring system using Grafana and Prometheus to monitor a Node.js application.
 
